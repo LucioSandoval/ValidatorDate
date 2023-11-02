@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model ValidatorDate
+
+<form action="/fecha" method="post">
+    <div class="form-group">
+        <label asp-for="Fecha"></label>
+        <input asp-for="Fecha" class="form-control" />
+        <span asp-validation-for="Fecha"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
